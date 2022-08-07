@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="R3hGe1kYAC9sE1o5VhobFyEvFgc6GAtnj5wV1G5z_B0feCaHRAsqiij_" name="csrf-token">
+  <title data-suffix=" · MetOpto">Met · MetOpto</title>
+  <link phx-track-static rel="stylesheet" href="./assets/app.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script defer phx-track-static type="text/javascript" src="./assets/app.js"></script>
+  <script src="https://kit.fontawesome.com/2beb041e54.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+  <div data-phx-main="true"
+    data-phx-session="SFMyNTY.g2gDaAJhBXQAAAAIZAACaWRtAAAAFHBoeC1Gd1dvb05WU09yWk1KbFVFZAAMbGl2ZV9zZXNzaW9uaAJkAAdkZWZhdWx0bggAULB95LecBRdkAApwYXJlbnRfcGlkZAADbmlsZAAIcm9vdF9waWRkAANuaWxkAAlyb290X3ZpZXdkAB1FbGl4aXIuTWV0V2ViLlVzZXJzTGl2ZS5JbmRleGQABnJvdXRlcmQAFEVsaXhpci5NZXRXZWIuUm91dGVyZAAHc2Vzc2lvbnQAAAAAZAAEdmlld2QAHUVsaXhpci5NZXRXZWIuVXNlcnNMaXZlLkluZGV4bgYAXGMvP4IBYgABUYA.Cmnom65KeIuVX5Sc4Q-TjHV0tVSsd_z3Xgl8cN5JDMY"
+    data-phx-static="SFMyNTY.g2gDaAJhBXQAAAADZAAKYXNzaWduX25ld2wAAAACZAAPY3VycmVudF9hY2NvdW50ZAAMY3VycmVudF91c2VyamQABWZsYXNodAAAAABkAAJpZG0AAAAUcGh4LUZ3V29vTlZTT3JaTUpsVUVuBgBcYy8_ggFiAAFRgA.OrpMQmZllO5YKbtGVbXrQ_UGMqrgBmgJsSuRSYfcAcc"
+    id="phx-FwWooNVSOrZMJlUE">
+    <div id="app" class="flex flex-col min-h-screen ">
+      <div id="header" class="sticky top-0 h-12">
+        <div class="sticky z-5 top-0 shrink-0 flex  bg-white shadow w-screen">
+          <div class="flex-1 px-4 flex justify-between">
+            <div class="flex items-center shrink-0 px-2">
+              <img class="h-10 w-auto p-2" src="./images/logo.svg" alt="MetOpto">
+            </div>
+            <div class="flex-1 flex p-2 space-x-4">
+
+              <div class="">
+                <a class="py-2 " data-phx-link="redirect" data-phx-link-state="replace" href="/" replace>
+                  <span class="opto-menu-txt">Dashboard</span>
+                </a>
+              </div>
+
+              <div class="">
+                <a class="py-2 " data-phx-link="redirect" data-phx-link-state="replace" href="/inspections" replace>
+                  <span class="opto-menu-txt">Data Entry</span>
+                </a>
+              </div>
+
+            </div>
+            <div class="ml-4 relative flex items-center md:ml-6 mr-12">
+              <div class="ml-3 flex">
+                <div class="text-gray-500">
+                  <div class="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none"
+                    id="user-menu-button" aria-expanded="false" aria-haspopup="true"
+                    phx-click="[[&quot;toggle&quot;,{&quot;display&quot;:null,&quot;ins&quot;:[[&quot;transform&quot;,&quot;transition&quot;,&quot;ease-in-out&quot;,&quot;duration-500&quot;],[&quot;opacity-0&quot;],[&quot;opacity-100&quot;]],&quot;outs&quot;:[[&quot;transform&quot;,&quot;transition&quot;,&quot;ease-in-out&quot;,&quot;duration-500&quot;],[&quot;opacity-100&quot;],[&quot;opacity-0&quot;]],&quot;time&quot;:200,&quot;to&quot;:&quot;#user-menu&quot;}]]"
+                    phx-click-away="[[&quot;hide&quot;,{&quot;time&quot;:200,&quot;to&quot;:&quot;#user-menu&quot;,&quot;transition&quot;:[[],[],[]]}]]">
+                    <i class="h-8 fa-thin fa-circle-user mr-4"></i>
+                    <div class="border rounded-xl px-8 py-1">
+                      <span class="cursor-pointer mr-4">admin@t.com</span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="user-menu"
+                  class="hidden origin-top-right absolute top-8 right-4 z-auto mt-4 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+
+                  <a class="opto-dropdown-txt" data-phx-link="redirect" data-phx-link-state="push" href="/users">User
+                    Management</a>
+                  <a class="opto-dropdown-txt" data-phx-link="redirect" data-phx-link-state="push"
+                    href="/admin/equipment_types">Configuration</a>
+
+                  <a class="opto-dropdown-txt" data-csrf="R3hGe1kYAC9sE1o5VhobFyEvFgc6GAtnj5wV1G5z_B0feCaHRAsqiij_"
+                    data-method="delete" data-to="/users/logout" href="/users/logout" rel="nofollow">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="content" class="grid grid-cols-[auto_1fr_auto] flex-grow ">
+
+        <!-- Static sidebar for desktop -->
+        <div class="w-72 flex flex-col flex-1 border-gray-200 overflow-y-auto">
+          <!-- Sidebar component, swap this element with another sidebar if you like -->
+          <div class="flex flex-col flex-grow border-r border-gray-200 pt-5 bg-white ">
+
+            <div class="mt-3 flex-grow-0 flex flex-col">
+
+              <h1 class=" opto-side-heading">User Management</h1>
+              <nav class="flex-auto px-2 space-y-2">
+
+                <div class="">
+
+                  <a class="opto-side-menu-link border-l-2 border-opto-orange" data-phx-link="redirect"
+                    data-phx-link-state="push" href="/users">
+                    Users
+                  </a>
+
+                </div>
+
+                <div class="">
+
+                  <a class="opto-side-menu-link " data-phx-link="redirect" data-phx-link-state="push" href="/roles">
+                    Roles
+                  </a>
+
+                </div>
+
+              </nav>
+
+            </div>
+          </div>
+        </div>
+        <!-- End static sidebar for desktop -->
+
+        <div id="main" class="border-gray-200 bg-gray-50  overflow-scroll">
+          <!-- Primary column -->
+          <section aria-labelledby="primary-heading" class="min-w-0 flex-1 flex flex-col order-first h-[calc(100vh-8rem)]">
+            <main class="pt-3 ">
+              <div class="block shrink-0 ">
+                <div class="h-full">
+                  <div class="shrink-0 min-w-max">
+                    <div class="h-10 bg-white px-6 flex flex-col justify-center">
+                      <div class="flex items-baseline justify-between space-x-3">
+                        <h2 class="text-xl font-base text-gray-900">Users</h2>
+                        <span>
+                          <a class="text-opto-orange" data-phx-link="patch" data-phx-link-state="push"
+                            href="/users/new">
+                            <i class="h-8 fa-light fa-circle-plus"></i>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="h-4 bg-white"></div>
+
+                    <div class="flex justify-around border-t border-gray-200 py-2 text-sm font-medium text-gray-500 ">
+                      <table class=" divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                          <tr>
+                            <td class="opto-table-heading justify-start w-64 ">Name</td>
+                            <td class="opto-table-heading justify-start w-64 ">Email</td>
+                            <td class="opto-table-heading justify-start w-64 ">Email</td>
+                            <td class="opto-table-heading justify-start w-64 ">Active</td>
+                            <td class="opto-table-heading justify-start w-64 ">Actions</td>
+                          </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              System Admin
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              admin@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/1/edit?email=admin%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/1/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jim Smith
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              hr@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/2/edit?email=hr%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/2/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="2" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+
+<!--                          ----------------------------                          -->
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              System Admin
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              admin@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/1/edit?email=admin%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/1/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jim Smith
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              hr@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/2/edit?email=hr%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/2/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="2" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              System Admin
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              admin@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/1/edit?email=admin%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/1/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jim Smith
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              hr@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/2/edit?email=hr%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/2/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="2" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              System Admin
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              admin@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/1/edit?email=admin%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/1/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jim Smith
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              hr@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/2/edit?email=hr%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/2/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="2" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              System Admin
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              admin@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/1/edit?email=admin%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/1/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jim Smith
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              hr@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/2/edit?email=hr%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/2/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="2" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr class="font-normal subpixel-antialiased">
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              Jane Doe
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              op@t.com
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Email confirmed</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <p class="mt-2 flex items-center text-sm text-gray-500">
+                                <span class="opto-badge-green">Enabled</span>
+                              </p>
+                            </td>
+                            <td class="justify-start px-3 py-1 whitespace-nowrap text-sm text-gray-500 ">
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/users/3/edit?email=op%40t.com">
+                                <i class="h-5 fa-light fa-file-pen"></i>
+                              </a>
+                              <a class="text-opto-orange ml-2" data-phx-link="patch" data-phx-link-state="push"
+                                href="/roles/3/show?return_to=%2Fusers">
+                                <i class="h-5 fa-light fa-id-card"></i>
+                              </a>
+                              <span phx-click="toggle-active" phx-value-id="3" class="text-opto-orange ml-2">
+                                <i class="h-5 fa-light fa-ban"></i>
+                              </span>
+                            </td>
+                          </tr>
+
+
+<!--                          ----------------------------                          -->
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </section>
+        </div>
+
+        <aside id="right-panel" class="w-72 flex flex-col border-l ">
+          <div data-phx-session=""
+            data-phx-static="SFMyNTY.g2gDaAJhBXQAAAADZAAKYXNzaWduX25ld2pkAAVmbGFzaHQAAAAAZAACaWRtAAAACmluZm9fcGFuZWxuBgBfYy8_ggFiAAFRgA.s-X8H8i0IrDqpSsYrOuajbFDwu8rd46AbyltCkLMpT8"
+            data-phx-parent-id="phx-FwWooNVSOrZMJlUE" id="info_panel">
+            <div class="bg-transparent block h-[calc((100vh-6rem)/3)]">
+              <div class=" justify-between border-b border-t items-center">
+                <h2 class="m-2 text-lg font-medium text-gray-500">
+                  Inspector
+                </h2>
+              </div>
+              <div id="info-panel" class="flow-root mx-2 mt-4 ">
+
+                <div></div>
+                <div>
+
+                  <div class="text-sm text-gray-400 m-1">
+                    No Audit Entries
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-phx-session=""
+            data-phx-static="SFMyNTY.g2gDaAJhBXQAAAADZAAKYXNzaWduX25ld2pkAAVmbGFzaHQAAAAAZAACaWRtAAAAC3Rhc2tzX3BhbmVsbgYAY2MvP4IBYgABUYA.19hvaRzSNuagYdi8NVOpOXK9BMzU_Gu5kzpciCqxTH0"
+            data-phx-parent-id="phx-FwWooNVSOrZMJlUE" id="tasks_panel">
+            <div class=" flex flex-col h-[calc((100vh-6rem)/3)]">
+              <div class="justify-between border-b border-t items-center">
+                <h2 class="m-2 text-lg font-medium text-gray-500">
+                  <span class="relative inline-block z-0">
+                    <i class="h-6 fa-light fa-clipboard-list"></i>
+
+                    <span class="absolute top-0 right-0 w-2 h-2 -transform translate-x-1/2 bg-red-600 rounded-full">
+                    </span>
+
+                  </span>
+                  To Do List
+                </h2>
+              </div>
+              <div id="tasks-list" class="flow-root mx-2 mt-1 overflow-y-scroll">
+                <ul role="list" class="divide-y divide-gray-200">
+
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/1/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Crusher Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T05:30:00Z" id="tskdt-1"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/2/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Crusher Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T05:35:00Z" id="tskdt-2"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/4/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Magnetic Seperator Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T05:50:00Z" id="tskdt-4"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/3/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Crusher Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T05:40:00Z" id="tskdt-3"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/5/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Crusher Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T05:45:00Z" id="tskdt-5"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/6/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Crusher Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T05:50:00Z" id="tskdt-6"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/7/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Magnetic Seperator Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T06:00:00Z" id="tskdt-7"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/8/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Crusher Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T05:55:00Z" id="tskdt-8"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <a href="/inspections/9/edit" class="hover:bg-gray-50">
+                      <div class="flex items-center px-1 py-1">
+                        <div class="min-w-0 flex-1 flex items-center">
+                          <div class="min-w-0 flex-1 px-1 grid grid-cols-1">
+                            <div>
+                              <p class="text-sm font-medium truncate">Crusher Inspection</p>
+                              <p class="mt-1 flex items-center text-xs text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                  stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                  </path>
+                                </svg>
+                                <span phx-hook="DisplayLocalDateTime" data-datetime="2022-07-25T07:25:00Z" id="tskdt-10"
+                                  class="ml-2"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-phx-session=""
+            data-phx-static="SFMyNTY.g2gDaAJhBXQAAAADZAAKYXNzaWduX25ld2pkAAVmbGFzaHQAAAAAZAACaWRtAAAAE25vdGlmaWNhdGlvbnNfcGFuZWxuBgBmYy8_ggFiAAFRgA.7BXgHB7yZVoAjYcLgCffxpsdgvrW7YlH19EHo7E1WiU"
+            data-phx-parent-id="phx-FwWooNVSOrZMJlUE" id="notifications_panel">
+            <div class="flex flex-col h-[calc((100vh-6rem)/3)]">
+              <div class="border-b border-t">
+                <h2 class="m-2 text-lg font-medium text-gray-500">
+                  Activity
+                </h2>
+              </div>
+              <div id="notifications-list" class="mx-2 mt-1 flex-1 overflow-y-scroll">
+                <ul role="list" class="divide-y divide-gray-200">
+
+
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-14"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-13"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-12"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-11"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-10"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-9"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-8"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-7"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-6"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-5"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-4"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-3"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-2"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:47:06.862850Z" id="notdt-1"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex flex-row">
+                    <div class="select-none flex flex-1 items-center p-2">
+                      <div class="flex flex-col w-6 h-6 justify-center items-center mr-2">
+                        <div class="" title="System Admin">
+                          <!--img alt={who(item)} src="/images/plant_icons/autoclave.svg" class="mx-auto object-cover rounded-full h-10 w-10 "/-->
+                          <div
+                            class="bg-blue-300 text-white rounded-full h-6 w-6 align-baseline text-center text-[12px] leading-[24px]">
+                            SA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex-1 pl-1 mr-1 text-gray-400 text-xs">
+                        Location Blue Sky2 updated
+                      </div>
+                      <div class="text-gray-400 dark:text-gray-200 text-xs">
+                        <span phx-hook="DisplayLocalTime" data-datetime="2022-07-27T23:38:08.773708Z" id="notdt-0"
+                          class="ml-2"></span>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div id="footer" class="sticky bottom-0 bg-red-200 h-12">
+
+      </div>
+    </div>
+  </div>
+  <!-- <iframe hidden height="0" width="0" src="/phoenix/live_reload/frame"></iframe> -->
+</body>
+
+</html>
